@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-  import Table from 
+  
 const tableData = [
   {
     date: '2016-05-03',
