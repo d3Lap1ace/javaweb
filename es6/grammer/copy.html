@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj = {
+        username:"毛力智",
+        age:23
+        }
+        let obj2 = obj
+        console.log(obj === obj2)
+    </script>
+    <script>
+        let obj3 = {...obj}
+        console.log(obj === obj3)
+    </script>
+    <script>
+        let obj4 = {
+            username:"rose",
+            age:20,
+            hobby:["jack","Singing"]
+        }
+        let obj5 = {...obj4}
+        console.log(obj4 === obj5)
+        console.log(obj4.hobby === obj5.hobby)
+    </script>
+    <script>
+        let obj4JsonStr = JSON.stringify(obj4)
+        console.log(obj4JsonStr)
+        let jsonStrToObj = JSON.parse(obj4JsonStr)
+        console.log(obj4)
+        console.log(jsonStrToObj)
+        console.log(obj4 === jsonStrToObj)
+        console.log(obj4.hobby == jsonStrToObj.hobby)
+    </script>
+</head>
+<body>
+    
+
+</body>
+</html>
