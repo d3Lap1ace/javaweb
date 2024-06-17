@@ -5,7 +5,7 @@ const api_name = "/admin/hosp/hospitalSet"
 
 // 声明一个分页查询的函数
 const getPageList = (current,size)=>{
-    return requset.get(`${api_name}/${current}/${size}`,{params:queryDto})
+    return requset.get(`${api_name}/${current}/${size}`)
 }
 //添加医院
 const add = (hospital)=>{
