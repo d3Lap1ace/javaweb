@@ -3,8 +3,8 @@ import axios from 'axios'
 
 // 创建axios实例
 const service = axios.create({
-    // baseURL:"https://api.uomg.com", // 基础路径
-    // timeout:5000                  // 超时时间
+    baseURL:"https://api.uomg.com", // 基础路径
+    timeout:5000                  // 超时时间
 })
 // 配置拦截请求的拦截器,再请求之前执行
 service.interceptors.request.use(
